@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <img class="hero-img" src="./images/SPLITTER.svg" alt="SPLITTER TEXT" />
+    <div class="card">
+      <div class="calculate-wrapper">
+        <form class="global__form">
+          <label class="form__label">
+            <span class="form__label-span"> Bill </span>
+            <input class="form__label-input" type="number" placeholder="0" />
+          </label>
+          <div class="form__tip__wrapper">
+            <p class="form__tip__label-text">Select Tip %</p>
+            <div class="form__tips__grid">
+              <div class="form__tip__select-wrapper">
+                <input
+                  class="form__tip__select-input"
+                  id="tip-5"
+                  name="tip"
+                  type="radio"
+                  value="5"
+                />
+                <label class="form__tip__select-label" for="tip-5">5%</label>
+              </div>
+              <div class="form__tip__select-wrapper">
+                <input
+                  class="form__tip__select-input"
+                  id="tip-10"
+                  name="tip"
+                  type="radio"
+                  value="10"
+                />
+                <label class="form__tip__select-label" for="tip-10">10%</label>
+              </div>
+              <div class="form__tip__select-wrapper">
+                <input
+                  class="form__tip__select-input"
+                  id="tip-15"
+                  name="tip"
+                  type="radio"
+                  value="15"
+                />
+                <label class="form__tip__select-label" for="tip-15">15%</label>
+              </div>
+              <div class="form__tip__select-wrapper">
+                <input
+                  class="form__tip__select-input"
+                  id="tip-25"
+                  name="tip"
+                  type="radio"
+                  value="25"
+                />
+                <label class="form__tip__select-label" for="tip-25">25%</label>
+              </div>
+              <div class="form__tip__select-wrapper">
+                <input
+                  class="form__tip__select-input"
+                  id="tip-50"
+                  name="tip"
+                  type="radio"
+                  value="50"
+                />
+                <label class="form__tip__select-label" for="tip-50">50%</label>
+              </div>
+              <div class="form__tip__select-wrapper">
+                <input
+                  class="custom-tip"
+                  type="text"
+                  placeholder="Custom"
+                  name="Custom-tip"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+        <label class="form__label">
+          <span class="form__label-span"> Number of People </span>
+          <input
+            class="form__label-input bottom"
+            type="number"
+            placeholder="0"
+          />
+        </label>
+      </div>
+      <div class="result-wrapper">
+        <div class="result-wrapper-top">
+          <div>
+            <h4 class="result-wrapper-title">Tip Amout</h4>
+            <p class="result-wrapper-text">/ person</p>
+          </div>
+          <h2 class="result-wrapper-number">$0.00</h2>
+        </div>
+        <div class="result-wrapper-center">
+          <div>
+            <h4 class="result-wrapper-title">Total</h4>
+            <p class="result-wrapper-text">/ person</p>
+          </div>
+          <h2 class="result-wrapper-number">$0.00</h2>
+        </div>
+        <button class="result-wrapper-button" type="reset">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
